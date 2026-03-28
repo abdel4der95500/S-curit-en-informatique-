@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>La sécurité et l&#39;Informatique par Abdelkader Osmani </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Sécurité et l'Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="brand nav-link active" data-target="home">
+        La Sécurité et l'Informatique
+      </button>
+
+      <div class="nav-menu">
+        <button class="nav-link" data-target="passwords">Mots de Passe</button>
+        <button class="nav-link" data-target="crypto">Cryptographie</button>
+        <button class="nav-link" data-target="stegano">Stéganographie</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <!-- HOME -->
+    <section id="home" class="view active">
+      <section class="hero">
+        <h1>La Sécurité et l'Informatique</h1>
+        <div class="hero-line"></div>
+        <p>
+          Explorez les concepts fondamentaux de la sécurité informatique à travers trois
+          domaines essentiels
+        </p>
+      </section>
+
+      <section class="cards-grid">
+        <article class="topic-card clickable-card" data-target="passwords">
+          <div class="icon-circle">🔒</div>
+          <h2>Mots de Passe</h2>
+          <p>
+            Découvrez les bonnes pratiques pour créer et gérer des mots de passe sécurisés
+          </p>
+        </article>
+
+        <article class="topic-card clickable-card" data-target="crypto">
+          <div class="icon-circle">🛡️</div>
+          <h2>Cryptographie</h2>
+          <p>
+            Comprenez les algorithmes qui protègent vos données et communications
+          </p>
+        </article>
+
+        <article class="topic-card clickable-card" data-target="stegano">
+          <div class="icon-circle">🖼️</div>
+          <h2>Stéganographie</h2>
+          <p>
+            Apprenez l'art de dissimuler des informations dans d'autres supports
+          </p>
+        </article>
+      </section>
+    </section>
+
+    <!-- MOTS DE PASSE -->
+    <section id="passwords" class="view">
+      <section class="page-header">
+        <h1>Les Mots de Passe</h1>
+      </section>
+
+      <section class="content-card">
+        <h2>Qu'est-ce qu'un mot de passe ?</h2>
+        <p>
+          Un mot de passe est un mot ou une série de caractères utilisés comme moyen
+          d'authentification pour prouver son identité.
+        </p>
+      </section>
+
+      <section class="content-card">
+        <h2>Quels sont les problèmes avec les mot de passe ?</h2>
+        <p>
+          Les mots de passe peuvent être piratés, et leur niveau de vulnérabilité dépend
+          de plusieurs facteurs, tels que leur complexité, leur longueur, la façon dont ils
+          sont stockés. Il est aussi difficile de se souvenir de tous ses mots de passe qui
+          se doivent d'être le moins répétitif possible.
+        </p>
+      </section>
+
+      <section class="content-card">
+        <h2>Comment se créer un mot de passe ?</h2>
+        <p>
+          Pour avoir un mot de passe correct, il faut au minimum 12 caractères, contenant
+          des chiffres, des lettres (minuscules et majuscules) et des caractères spéciaux.
+        </p>
+      </section>
+
+      <section class="content-card">
+        <h2>Mot de passe piraté ?</h2>
+        <p>Si un pirate possède trouve votre mot de passe commun il peut :</p>
+        <ul>
+          <li>usurper votre boîte mail pour piéger vos contacts,</li>
+          <li>utiliser vos données bancaires pour des achats frauduleux,</li>
+          <li>usurper votre identité,</li>
+          <li>demander une rançon s'il trouve des données compromettantes dans votre boîte mail.</li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2>QCM</h2>
+        <div class="quiz-block">
+          <h3>Quel mot de passe est-il correct ?</h3>
+
+          <div class="quiz-options" id="quiz-passwords">
+            <label class="option-card">
+              <input type="radio" name="password-q1" value="a" />
+              <span>TPNSI3</span>
+            </label>
+
+            <label class="option-card">
+              <input type="radio" name="password-q1" value="b" />
+              <span>TpNsi.3</span>
+            </label>
+
+            <label class="option-card">
+              <input type="radio" name="password-q1" value="c" />
+              <span>nsitp</span>
+            </label>
+
+            <label class="option-card">
+              <input type="radio" name="password-q1" value="d" />
+              <span>nsi.tp</span>
+            </label>
+          </div>
+
+          <button class="main-btn" id="password-btn">Envoyer</button>
+          <p class="quiz-result" id="password-result"></p>
+        </div>
+      </section>
+    </section>
+
+    <!-- CRYPTO -->
+    <section id="crypto" class="view">
+      <section class="page-header">
+        <h1>Algorithmes de cryptographie</h1>
+      </section>
+
+      <section class="content-card">
+        <h2>Définition</h2>
+        <p>
+          Un algorithme de cryptographie est un ensemble de règles mathématiques et de
+          procédures utilisées pour sécuriser des données en les chiffrant et en les
+          déchiffrant. Ces algorithmes permettent de garantir la confidentialité,
+          l'intégrité et l'authenticité des informations échangées.
+        </p>
+        <p class="source">Source: ENTRUST</p>
+      </section>
+
+      <section class="content-card">
+        <h2>Types d'algorithmes de cryptographie</h2>
+        <p class="source">Source: Wikipedia</p>
+      </section>
+
+      <section class="content-card">
+        <h2>Cryptographie symétrique</h2>
+        <p>
+          Une seule clé est utilisée pour le chiffrement et le déchiffrement. Cette clé
+          doit rester secrète et être partagée entre les parties communicantes de manière
+          sécurisée. Ils se classent en 2 types, le chiffrement par blocs et le chiffrement
+          par flot.
+        </p>
+        <h3>Exemples :</h3>
+        <p>AES (Advanced Encryption Standard), DES (Data Encryption Standard).</p>
+        <p class="source">Source: Wallarm</p>
+      </section>
+
+      <section class="content-card">
+        <h2>Cryptographie asymétrique</h2>
+        <p>
+          Utilise une paire de clés : une publique pour le chiffrement et une privée pour
+          le déchiffrement. Cette approche résout le problème de la distribution sécurisée
+          des clés rencontré dans la cryptographie symétrique.
+        </p>
+        <h3>Exemples :</h3>
+        <p>RSA, ECC (Elliptic Curve Cryptography).</p>
+        <p class="source">Source: Snapshot hub</p>
+      </section>
+
+      <section class="content-card">
+        <h2>QCM</h2>
+
+        <div class="quiz-block">
+          <h3>Quelle est la principale fonction de la cryptographie ?</h3>
+
+          <div class="quiz-options" id="quiz-crypto">
+            <label class="option-card">
+              <input type="radio" name="crypto-q1" value="a" />
+              <span>Stocker des informations de manière non sécurisée</span>
+            </label>
+
+            <label class="option-card">
+              <input type="radio" name="crypto-q1" value="b" />
+              <span>Partager des informations publiquement</span>
+            </label>
+
+            <label class="option-card">
+              <input type="radio" name="crypto-q1" value="c" />
+              <span>Protéger les informations en les rendant inaccessibles</span>
+            </label>
+
+            <label class="option-card">
+              <input type="radio" name="crypto-q1" value="d" />
+              <span>Analyser les données sensibles</span>
+            </label>
+          </div>
+
+          <button class="main-btn" id="crypto-btn">Envoyer</button>
+          <p class="quiz-result" id="crypto-result"></p>
+        </div>
+      </section>
+
+      <section class="content-card">
+        <h2>En résumé</h2>
+        <p>
+          La cryptographie est essentielle pour protéger les informations sensibles dans
+          le monde numérique.
+        </p>
+      </section>
+    </section>
+
+    <!-- STEGANO -->
+    <section id="stegano" class="view">
+      <section class="page-header">
+        <h1>Stéganographie</h1>
+      </section>
+
+      <section class="content-card">
+        <h2>Définition</h2>
+        <p>
+          La stéganographie est l'art et la science de cacher des informations secrètes
+          dans un autre support de manière à ce que leur existence passe inaperçue.
+          Contrairement à la cryptographie, qui vise à rendre l'information illisible pour
+          ceux qui ne possèdent pas la clé de décryptage, la stéganographie cherche à
+          dissimuler totalement le message à l'œil nu, de sorte qu'aucun indice ne révèle
+          sa présence.
+        </p>
+
+        <p>
+          Par exemple, dans une image numérique, un message peut être caché dans les pixels
+          de l'image de façon à ne pas altérer visuellement l'apparence de celle-ci. Ce
+          message peut être extrait uniquement par quelqu'un connaissant la méthode
+          spécifique utilisée pour le dissimuler.
+        </p>
+
+        <p>
+          L'objectif principal de la stéganographie est donc de dissimuler l'existence même
+          de l'information, afin que personne ne soupçonne qu'un message secret est présent,
+          même s'il est intercepté. C'est pourquoi cette technique est souvent utilisée dans
+          des contextes où la confidentialité et la discrétion sont primordiales, comme dans
+          des communications sensibles ou des échanges cryptés.
+        </p>
+
+        <p>
+          En résumé, la stéganographie permet de cacher un message dans un autre support
+          (image, audio, vidéo, texte, etc.) sans qu'il ne soit apparent ou facilement
+          détectable.
+        </p>
+      </section>
+
+      <section class="content-card">
+        <h2>Rapide Explication</h2>
+
+        <h3>Cacher un message</h3>
+        <input type="text" id="messageInput" placeholder="Entrez un message" />
+        <button class="main-btn" id="hide-btn">Cacher</button>
+
+        <div class="spacer"></div>
+
+        <h3>Révéler un message</h3>
+        <button class="main-btn" id="reveal-btn">Révéler</button>
+
+        <div class="tool-result">
+          <p id="revealedMessage"></p>
+        </div>
+
+        <h3>Comment ça marche ?</h3>
+        <p>Ce petit outil permet de cacher un message en l'encodant en Base64.</p>
+        <p id="hiddenMessage" class="hidden-text"></p>
+      </section>
+
+      <section class="content-card">
+        <h2>Exemples</h2>
+
+        <div class="inner-block">
+          <h3>1° Protection des Droits d'Auteurs</h3>
+          <p>
+            Un photographe ajoute une signature invisible à ses images pour prouver qu'elles
+            lui appartiennent.
+          </p>
+          <p><strong>Méthode :</strong></p>
+          <p>
+            Il va dissimuler une signature cachée dans sa photo originale puis faire appel à
+            un outil qui peut détecter la signature.
+          </p>
+        </div>
+
+        <div class="inner-block">
+          <h3>2° Prévention de la Censure</h3>
+          <p>
+            Dans certains pays, les informations peuvent être censurées. Les journalistes
+            trouvent alors des moyens pour contourner la censure.
+          </p>
+          <p><strong>Méthode :</strong></p>
+          <p>
+            Le journaliste peut faire appel à un logiciel qui révélera un article caché dans
+            une image diffusée sur les réseaux sociaux.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-card">
+        <h2>Concepts Proches</h2>
+
+        <div class="inner-block">
+          <h3>Watermarking (filigrane)</h3>
+          <p>
+            <strong>Objectif :</strong> Ajouter une marque discrète, mais perceptible pour
+            prouver la propriété ou l'authenticité d'un fichier, ou pour protéger les droits
+            d'auteur.
+          </p>
+          <p>
+            <strong>Méthode :</strong> L'information (comme un logo ou un texte) est insérée
+            dans le fichier de manière à ce qu'elle soit présente à toute copie du fichier,
+            mais elle peut être difficile à détecter à l'œil nu. Contrairement à la
+            stéganographie, le filigrane est souvent visible à l'utilisateur, même si parfois
+            de manière subtile.
+          </p>
+          <p>
+            <strong>Exemple :</strong> Insérer un logo d'une entreprise sur une image pour
+            montrer qu'elle appartient à cette entreprise.
+          </p>
+        </div>
+
+        <div class="inner-block">
+          <h3>Fingerprinting (Empreinte numérique)</h3>
+          <p>
+            <strong>Objectif :</strong> Identifier spécifiquement chaque copie d'un fichier
+            pour pouvoir retracer sa provenance. Cela permet de lutter contre le piratage et
+            de savoir qui est responsable de la diffusion non autorisée d'un fichier.
+          </p>
+          <p>
+            <strong>Methode :</strong> Contrairement au watermarking où le même filigrane est
+            ajouté à toutes les copies, chaque copie dans le fingerprinting contient des
+            informations uniques, généralement invisibles ou inaudibles. Ces informations
+            permettent de retracer chaque distribution du fichier.
+          </p>
+          <p>
+            <strong>Exemple :</strong> Insérer un code unique dans chaque copie d'un fichier
+            vidéo pour identifier la source de la fuite d'une copie piratée.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-card">
+        <h2>Questionnaire à Choix Multiples</h2>
+
+        <div class="quiz-block">
+          <h3>1. Qu'est-ce que la stéganographie ?</h3>
+          <div class="quiz-options">
+            <label class="option-card">
+              <input type="radio" name="steg-q1" value="A" />
+              <span>A) Une technique de cryptographie</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="steg-q1" value="B" />
+              <span>B) Une technique permettant de cacher des informations</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="steg-q1" value="C" />
+              <span>C) Une méthode de compression de fichiers</span>
+            </label>
+          </div>
+
+          <h3>2. Quel est l'objectif principal de la stéganographie ?</h3>
+          <div class="quiz-options">
+            <label class="option-card">
+              <input type="radio" name="steg-q2" value="A" />
+              <span>A) Créer des copies illégales de fichiers</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="steg-q2" value="B" />
+              <span>B) Cacher des informations sans qu'elles soient détectées</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="steg-q2" value="C" />
+              <span>C) Assurer la sécurité des fichiers par cryptographie</span>
+            </label>
+          </div>
+
+          <h3>3. Quel est l'un des avantages de la stéganographie par rapport à la cryptographie ?</h3>
+          <div class="quiz-options">
+            <label class="option-card">
+              <input type="radio" name="steg-q3" value="A" />
+              <span>A) Elle rend les messages illisibles</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="steg-q3" value="B" />
+              <span>B) Elle permet de cacher les informations dans des fichiers apparemment innocents</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="steg-q3" value="C" />
+              <span>C) Elle est plus rapide que la cryptographie</span>
+            </label>
+          </div>
+
+          <button class="main-btn" id="steg-btn">Soumettre</button>
+          <p class="quiz-result" id="steg-result"></p>
+        </div>
+      </section>
+
+      <section class="content-card">
+        <h2>Sources</h2>
+        <p>1° kaspersky.fr</p>
+        <p>2° techniques-ingenieur.fr</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
